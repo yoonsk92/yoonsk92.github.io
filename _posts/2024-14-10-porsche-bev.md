@@ -6,6 +6,7 @@ categories: [supply_chain]
 tag: 
 image:
   path: post_img/2024-14-10-porsche-bev/Porsche_Taycan_Turbo_S-01.jpg
+  alt: Porsche_Taycan_Turbo_S
 ---
 ### **Business Case Overview**
 

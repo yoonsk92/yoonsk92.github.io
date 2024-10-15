@@ -1,6 +1,6 @@
 ---
 title: Porsche's BEVs Supply Chain Optimization
-date: 14-10-2024
+date: 2024-10-14
 math: true
 categories: [supply_chain]
 tag: 

@@ -12,7 +12,7 @@ image:
 
 [News: Porsche's EV sales target](https://www.reuters.com/business/autos-transportation/porsche-confirms-forecast-107-higher-operating-profit-h1-2023-07-26/)
 
-According to the news article, Porsche is facing difficultis in producing its **battery-electric vehicles (BEVs)** due to **supply chain issues**. These problems include sourcing critical parts like high-voltage heaters, which are essential for BEV production. Despite these challenges, Porsche has kept its goal of having BEVs account for 12-14% of its total sales. The company repoted increased profits and sales in the first half of the year but is struggling to meet demand because of unpredictable supply chain disruptions. Porsche's ability to meet its BEV targets depends on improving its supply chain in the second half of the year.
+According to the news article, Porsche is facing difficulties in producing its **battery-electric vehicles (BEVs)** due to **supply chain issues**. These problems include sourcing critical parts like high-voltage heaters, which are essential for BEV production. Despite these challenges, Porsche has kept its goal of having BEVs account for 12-14% of its total sales. The company reported increased profits and sales in the first half of the year but is struggling to meet demand because of unpredictable supply chain disruptions. Porsche's ability to meet its BEV targets depends on improving its supply chain in the second half of the year.
 
 They need to make decisions about:
 - **Which suppliers to use** to source these critical parts.
@@ -30,7 +30,7 @@ $$
 Let's break down our objective function and understand what each terms mean:
   - Porsche wants to **minimize the total costs** associated with its supply chain.
   - $\sum_{i,j} c_{ij} x_{ij}$ : represents the **ordering and transportation costs**. Here, $x_{ij}$ is how many parts we order from supplier $i$ and send to factory $j$, and $c_{ij}$ is the cost of ordering and transporting those parts.
-  - $\sum_{i} p_{i} y_{i}$ : represents the **penalty costs** for working with suppliers who might have delays or disruptions. Here, $p_{i}$ is the penalty cost associated with supplier $i$, and $y_{i}$ is a binary variable (0 or 1) that tells us whether we're using supplier $i$ or not. For example, if $y_{i} = 1$, it means the supplier is selected and we may incur penalties for delays.
+  - $\sum_{i} p_{i} y_{i}$ : represents the **penalty costs** for working with suppliers who might have delays or disruptions. Here, $p_{i}$ is the penalty cost associated with supplier $i$, and $y_{i}$ is a binary variable (0 or 1) that tells us whether we're using supplier $i$ or not. For example, if $y_{i} = 1$, it means the supplier is selected, and we may incur penalties for delays.
 
 ### **Constraints**:
 1. $\sum_{i}x_{ij} \geq d_{j} \quad \forall j$
@@ -55,7 +55,7 @@ Let's break down our objective function and understand what each terms mean:
 5. $x_{ij} \geq 0 \quad \forall i,j$
 - $x_{ij}$ : the number of parts ordered, must be a **non-negative number**. You can't order a negative number of parts, so this ensures that all orders are positive or zero.
 
-In short, Porsche is trying to make the best decisions in their supply chain, ensuring they get enough parts to keep production going, while minimizing costs and avoiding penalties from delayed parts. This model helps them manage challenges "mathematically".
+In short, Porsche is trying to make the best decisions in their supply chain, ensuring they get enough parts to keep production going, while minimizing costs and avoiding penalties from delayed parts. This model helps them manage challenges "mathematically."
 
 #### **Assumptions**:
 - $c_{ij} = 1500\quad$ (cost of parts and transportation from supplier $i$ to factory $j$)
@@ -63,7 +63,7 @@ In short, Porsche is trying to make the best decisions in their supply chain, en
 - $S_{i} = 5000\quad$ (each supplier can supply a maximum of 5000 units)
 - $d_{j} = 7000\quad$ (7,000 units of critical parts are needed per factory per year to meet the BEV production goals)
 - $M = 1000\quad$ (used to link whether a supplier is selected or not)
-- We also assume there are two factories and three suppliers for simplicity.
+- For simplicity, we also assume two factories and three suppliers.
 
 ### **Result**:
 Solving the mathematical model gives us the following result:

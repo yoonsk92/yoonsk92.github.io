@@ -5,7 +5,7 @@ math: true
 categories: [supply_chain]
 tag: 
 image:
-  path: post_img/2024-14-10-porsche-bev/Porsche_Taycan_Turbo_S-01.jpg
+  path: post_img/2024-10-14-porsche-bev/Porsche_Taycan_Turbo_S-01.jpg
   alt: Porsche Taycan Turbo S
 ---
 ### **Business Case Overview**

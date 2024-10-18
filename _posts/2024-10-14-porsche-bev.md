@@ -85,4 +85,4 @@ and **Factory 2** receives:
 - Total: 7000 parts
 
 This distribution reflects the constraints of supplier capacities and the goal of minimizing costs, such as transportation and penalties. Following is the visual result:
-![img-description](post_img/2024-14-10-porsche-bev/porsche-bev-bar-result.png){: width="670" height="500"}
+![img-description](post_img/2024-10-14-porsche-bev/porsche-bev-bar-result.png){: width="670" height="500"}
